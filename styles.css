@@ -33,6 +33,7 @@ nav ul {
     display: flex;
     list-style: none;
     margin-left: auto;
+    flex-direction: row;
 }
 
 nav ul li {
