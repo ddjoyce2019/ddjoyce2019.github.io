@@ -330,11 +330,11 @@ nav ul li a:hover {
     nav ul {
         flex-direction: row; /* Ensure it's horizontal */
         justify-content: space-around; /* Add space around each item */
-        margin-left: 0; /* Remove the margin */
+        margin-left: 10px; /* Remove the margin */
     }
 
     nav ul li {
-        margin: 0; /* Remove the margin */
+        margin: 10px; /* Remove the margin */
     }
 
     .home-section, .about-section, .timeline-section {
@@ -380,11 +380,11 @@ nav ul li a:hover {
     nav ul {
         flex-direction: row; /* Ensure it's horizontal */
         justify-content: space-around; /* Add space around each item */
-        margin-left: 0; /* Remove the margin */
+        margin-left: 10px; /* Remove the margin */
     }
 
     nav ul li {
-        margin: 0; /* Remove the margin */
+        margin: 10px; /* Remove the margin */
     }
     .home-section {
         padding: 10px;
