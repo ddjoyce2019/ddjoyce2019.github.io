@@ -199,18 +199,19 @@ from a ground-based sensor to the Airborne Sensor Test Bed <br><br>
 			    video.play().catch(function(error) {
 				    // Autoplay was prevented
 				    // Show a play button or handle the error
-				    var playButton = document.createElement('button');
-				    playButton.innerText = 'Play Video';
-				    playButton.style.position = 'absolute';
-				    playButton.style.top = '50%';
-				    playButton.style.left = '50%';
-				    playButton.style.transform = 'translate(-50%, -50%)';
-				    playButton.style.zIndex = 2;
-				    playButton.addEventListener('click', function() {
-					    video.play();
-					    playButton.style.display = 'none';
+				    video.play();
+				    //var playButton = document.createElement('button');
+				    //playButton.innerText = 'Play Video';
+				    //playButton.style.position = 'absolute';
+				    //playButton.style.top = '50%';
+				    //playButton.style.left = '50%';
+				    //playButton.style.transform = 'translate(-50%, -50%)';
+				    //playButton.style.zIndex = 2;
+				    //playButton.addEventListener('click', function() {
+					//    video.play();
+					//    playButton.style.display = 'none';
 				    });
-				    document.body.appendChild(playButton);
+				    //document.body.appendChild(playButton);
 			    });
 		    }
 	    });
