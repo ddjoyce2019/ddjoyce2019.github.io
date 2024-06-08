@@ -322,7 +322,7 @@ nav ul li a:hover {
         padding: 10px 20px;
         flex-start: right;
         flex-direction: column;
-        justify-content: center;
+        justify-content: right;
         width: 75%;
     }
 
