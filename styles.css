@@ -319,6 +319,8 @@ nav ul li a:hover {
 @media (max-width: 1024px) {
     header {
         padding: 10px 20px;
+        flex-start: right;
+        flex-direction: row;
     }
 
     nav ul {
@@ -366,7 +368,7 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
     header {
-        flex-direction:row;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -392,10 +394,20 @@ nav ul li a:hover {
 
     .portfolio-grid {
         grid-template-columns: 1fr;
-        gap: 1.5px;
+        gap: 5px;
     }
 
     .portfolio-section h2 {
         font-size: 1.5em;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline {
+        width: 90%;
+        margin: 20px 0;
     }
 }
