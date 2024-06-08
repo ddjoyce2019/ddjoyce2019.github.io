@@ -328,15 +328,13 @@ nav ul li a:hover {
     } */
 
     nav ul {
-        display: flex;
-        list-style: none;
-        margin-left: auto;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row; /* Ensure it's horizontal */
+        justify-content: space-around; /* Add space around each item */
+        margin-left: 0; /* Remove the margin */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0; /* Remove the margin */
     }
 
     .home-section, .about-section, .timeline-section {
@@ -380,13 +378,14 @@ nav ul li a:hover {
     } */
     
     nav ul {
-        display: flex;
-        list-style: none;
-        margin-left: auto;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row; /* Ensure it's horizontal */
+        justify-content: space-around; /* Add space around each item */
+        margin-left: 0; /* Remove the margin */
     }
 
+    nav ul li {
+        margin: 0; /* Remove the margin */
+    }
     .home-section {
         padding: 10px;
     }
