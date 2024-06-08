@@ -329,12 +329,11 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: row; /* Ensure it's horizontal */
-        justify-content: space-around; /* Add space around each item */
-        margin-left: 10px; /* Remove the margin */
+        justify-content: flex-start; /* Add space around each item */
     }
 
     nav ul li {
-        margin: 10px; /* Remove the margin */
+        margin-right: 20px; /* Remove the margin */
     }
 
     .home-section, .about-section, .timeline-section {
@@ -379,12 +378,11 @@ nav ul li a:hover {
     
     nav ul {
         flex-direction: row; /* Ensure it's horizontal */
-        justify-content: space-around; /* Add space around each item */
-        margin-left: 10px; /* Remove the margin */
+        justify-content: flex-start; /* Add space around each item */
     }
 
     nav ul li {
-        margin: 10px; /* Remove the margin */
+        margin-right: 15px; /* Remove the margin */
     }
     .home-section {
         padding: 10px;
