@@ -192,5 +192,28 @@ from a ground-based sensor to the Airborne Sensor Test Bed <br><br>
     </section>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <script>
+	    document.addEventListener('DOMContentLoaded', function() {
+		    var video = document.getElementById('bg-video');
+		    if (video) {
+			    video.play().catch(function(error) {
+				    // Autoplay was prevented
+				    // Show a play button or handle the error
+				    var playButton = document.createElement('button');
+				    playButton.innerText = 'Play Video';
+				    playButton.style.position = 'absolute';
+				    playButton.style.top = '50%';
+				    playButton.style.left = '50%';
+				    playButton.style.transform = 'translate(-50%, -50%)';
+				    playButton.style.zIndex = 2;
+				    playButton.addEventListener('click', function() {
+					    video.play();
+					    playButton.style.display = 'none';
+				    });
+				    document.body.appendChild(playButton);
+			    });
+		    }
+	    });
+    </script>
 </body>
 </html>
