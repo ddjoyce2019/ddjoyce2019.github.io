@@ -377,7 +377,7 @@ nav ul li a:hover {
     }
     
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
