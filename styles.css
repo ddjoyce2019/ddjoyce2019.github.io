@@ -321,13 +321,13 @@ nav ul li a:hover {
     header {
         padding: 10px 20px;
         flex-start: right;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: right;
         width: 75%;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 0;
         justify-content: right;
     }
@@ -372,12 +372,12 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
     
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: right;
         width: 100%;
