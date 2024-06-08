@@ -322,11 +322,13 @@ nav ul li a:hover {
         padding: 10px 20px;
         flex-start: right;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     nav ul {
         flex-direction: column;
         margin-left: 0;
+        justify-content: space-between;
     }
 
     nav ul li {
