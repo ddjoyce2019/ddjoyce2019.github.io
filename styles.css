@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1d1f27;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1d1f27;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00f0ff;
+}
+
+.home-section, .about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-section {
+    height: calc(100vh - 100px);
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+
+.content {
+    max-width: 500px;
+    color: #ffffff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.timeline-section {
+    padding: 50px 0;
+    background-color: #1d1f27;
+    color: #ffffff;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.timeline {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.timeline h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00f0ff;
+    text-align: center;
+}
+
+.timeline-item {
+    background-color: #2a2d37;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position: relative;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 24px;
+    bottom: 0;
+    width: 3px;
+    background-color: #00f0ff;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 3.5px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: #00f0ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+.dots_ed, .dots_ex {
+    position: absolute;
+    left: 3.5px;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 345px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #00f0ff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00f0ff;
+}
+
+.links {
+    color: white;
+}
+
+.timeline-item .date {
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-bottom: 100px;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: #b0b0b0;
+}
+
+.content h1 {
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.content h3 .typing-animation, .content h2 span {
+    color: #00f0ff;
+}
+
+.content p {
+    margin: 20px 0;
+    color: #b0b0b0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #00f0ff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #1d1f27;
+    background-color: #00f0ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: monospace;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.btn:hover {
+    background-color: #00c0cc;
+    align-items: center;
+}
+
+.image img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.about-section .image img {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.portfolio-section {
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.portfolio-section h2 span {
+    color: #00f0ff;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(2, 280px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00f0ff;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-item .overlay .text {
+    color: #00f0ff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .home-section, .about-section, .timeline-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .portfolio-section h2 {
+        font-size: 2em;
+    }
+
+    .social-icons {
+        margin: 10px 0;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-section {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content h2 {
+        font-size: 1.2em;
+    }
+
+    .content h3 {
+        font-size: 1em;
+    }
+
+    .image img, .about-section .image img {
+        width: 100%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .portfolio-section h2 {
+        font-size: 1.5em;
+    }
+}
