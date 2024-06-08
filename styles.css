@@ -332,7 +332,7 @@ nav ul li a:hover {
         list-style: none;
         margin-left: auto;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     nav ul li {
@@ -384,7 +384,7 @@ nav ul li a:hover {
         list-style: none;
         margin-left: auto;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .home-section {
