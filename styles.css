@@ -321,7 +321,7 @@ nav ul li a:hover {
     header {
         padding: 10px 20px;
         flex-start: right;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         width: 75%;
     }
