@@ -372,6 +372,13 @@ nav ul li a:hover {
         flex-direction: row;
         align-items: flex-start;
     }
+    
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
 
     .home-section {
         padding: 10px;
