@@ -329,7 +329,7 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column;
         margin-left: 0;
-        justify-content: center;
+        justify-content: right;
     }
 
     nav ul li {
