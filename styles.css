@@ -327,11 +327,13 @@ nav ul li a:hover {
         width: 75%;
     } */
 
-/*     nav ul {
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
         flex-direction: row;
-        margin-left: 100px;
         justify-content: space-between;
-    } */
+    }
 
     nav ul li {
         margin: 10px 0;
@@ -377,13 +379,13 @@ nav ul li a:hover {
         align-items: flex-start;
     } */
     
-/*     nav ul {
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        margin-left: 100px;
-        //justify-content: space-between;
-    } */
+    }
 
     .home-section {
         padding: 10px;
