@@ -379,9 +379,9 @@ nav ul li a:hover {
     nav ul {
         flex-direction: row;
         flex-wrap: wrap;
-        //justify-content: center;
+        justify-content: center;
         width: 100%;
-        justify-content: space-between;
+        //justify-content: space-between;
     }
 
     .home-section {
