@@ -329,7 +329,7 @@ nav ul li a:hover {
 
     nav ul {
         flex-direction: row;
-        margin-left: 0;
+        margin-left: 100;
         justify-content: space-between;
     }
 
